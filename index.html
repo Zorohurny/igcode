@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavSuperCode</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="hero-container">
+      <div class="search-box">
+        <h1 class="logo">JavSuper<span>Code</span></h1>
+        <div class="search-input-container">
+          <input type="text" id="searchInput" placeholder="Enter Post Number">
+          <button onclick="searchPost()">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container" id="result"></div>
+    
+    <div class="stats-container">
+      <p class="note"><i class="fas fa-info-circle"></i> Note: <span>If the link doesn't work, search the video title on the internet.</span></p>
+    </div>
+
+    <div class="random-box-header">
+      <h2><i class="fas fa-star"></i> Featured Posts</h2>
+      <button id="refreshButton">
+        <i class="fas fa-sync-alt"></i>
+        Refresh
+      </button>
+    </div>
+
+    <div class="random-box" id="random-posts"></div>
+
+    <h4 class="footer">Made by JavSuperCode</h4>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
